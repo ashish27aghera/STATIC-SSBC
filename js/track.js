@@ -44,7 +44,7 @@ jQuery( document ).ready(function( $ ) {
       var serach_by = $('input[name="searchRadios"]:checked').val();
     // alert(serach_by);
     
-    $.getJSON('https://ssbc.itdservices.in/api/v1/track.json?tracking_no='+tracking_no+'&search_by='+serach_by+'&show_stages=yes', function (data) {
+    $.getJSON('https://admin.ssbc.co/api/v1/track.json?tracking_no='+tracking_no+'&search_by='+serach_by+'&show_stages=yes', function (data) {
   
         $('.track_rslt').html('');
         $('.info-table tbody').html('');
