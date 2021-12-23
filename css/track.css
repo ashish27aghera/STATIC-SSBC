@@ -1,32 +1,231 @@
 /* tracking start */
-.search0result table,
-.search0result tr,
-.search0result td,
-.search0result th {
-  border: 1px solid #ca3124;
-  padding: 8px 16px;
-  text-align: left;
+
+.track-block table,
+.track-block tr,
+.track-block td,
+.track-block th {
+    border: 1px solid #ca3124;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 13px;
+    text-transform: capitalize;
+    font-family: 'Roboto';
 }
-.search0result table {
-  width: 100%;
-  transition: 0.5s ease-in-out;
-  margin-bottom: 15px;
+
+.track-block th {
+    color: #fff;
 }
-.search0result table:last-child {
-  width: 100%;
-  margin-bottom: 15px;
+
+.track-block td {
+    color: #000000;
 }
-.search0result thead tr {
-  background: #ca3124;
-  color: #fff;
-  font-weight: bold;
+
+.track-block table {
+    width: 100%;
+    transition: 0.5s ease-in-out;
 }
+
+.track-block thead tr {
+    background: #ca3124;
+    color: #fff;
+    font-weight: bold;
+}
+
+.track-block h3 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.track-block h5 {
+    font-size: 16px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.track-block .tracking-info {
+    margin-bottom: 15px;
+}
+
+
 /* tracking end */
+
+.trackmodalpop {
+    background-color: rgb(0 0 0 / 50%);
+    padding: 0 !important;
+}
+
+.trackmodalpop .modal-dialog {
+    width: auto;
+    margin: 10px;
+    min-height: calc(100% - 3.5rem);
+    max-height: calc(100% - 3.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.trackmodalpop .modal-header {
+    background-color: #ca3124;
+    padding: 0.5rem 1rem;
+    border-radius: unset;
+    align-items: center;
+}
+
+.trackmodalpop .modal-header h5 {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.trackmodalpop .close {
+    margin: unset !important;
+    width: auto !important;
+    outline: unset !important;
+    color: #fff;
+    opacity: 1;
+    padding: unset;
+    font-size: 24px;
+}
+
+.trackmodalpop .modal-dialog {
+    margin: auto;
+    overflow-y: initial !important;
+    max-width: 1165px;
+}
+
+.trackmodalpop .modal-content {
+    border-radius: unset;
+}
+
+.trackmodalpop .modal-body {
+    overflow-y: auto;
+    height: auto;
+    max-height: 500px;
+    padding: 15px 0;
+}
+
+.tracking-data .invalid-record {
+    padding: 0.5em 1em;
+    background-color: #ca3124;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tracking-data .invalid-record h5 {
+    font-size: 14px;
+    color: #ffffff;
+    margin: unset;
+    font-weight: 600;
+    line-height: 38px;
+}
+
+.accordion {
+    margin-top: 30px;
+}
+
+.accordion .accordion-header {
+    padding: 0 1em;
+    background-color: #ca3124;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.accordion .accordion-header>* {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.accordion .accordion-header.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.accordion .accordion-header h2 {
+    color: #fff;
+    font-weight: normal;
+    text-transform: capitalize;
+}
+
+.accordion .accordion-header h2:nth-child(2) {
+    margin-left: auto;
+    margin-right: 15px;
+}
+
+.accordion .accordion-header .fa_icon {
+    color: #fff;
+}
+
+.accordion .accordion-body {
+    display: none;
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-top: 0;
+    overflow-x: auto;
+}
+
+.accordion .accordion-body.active {
+    display: block;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    .trackmodalpop .modal-dialog {
+        max-width: 980px;
+    }
+    .track-block .tracking-info {
+        overflow-x: auto;
+    }
+    .track-block .delivery-info {
+        overflow-x: auto;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .trackmodalpop .modal-dialog {
+        max-width: 740px;
+    }
+    .track-block .tracking-info {
+        overflow-x: auto;
+    }
+    .track-block .delivery-info {
+        overflow-x: auto;
+    }
+}
+
 @media only screen and (min-width: 320px) and (max-width: 767px) {
-  .search0result table, 
-  .search0result tr, 
-  .search0result td, 
-  .search0result th {
-    padding: 5px 10px;
-  }
+    .track-block table,
+    .track-block tr,
+    .track-block td,
+    .track-block th {
+        padding: 5px 10px;
+    }
+    .track-block .tracking-info {
+        overflow-x: auto;
+    }
+    .track-block .delivery-info {
+        overflow-x: auto;
+    }
+    .trackmodalpop .modal-dialog {
+        margin: 15px;
+    }
+    .accordion .accordion-header>* {
+        font-size: 10px;
+    }
+    .track-block h3 {
+        font-size: 12px;
+    }
+    .track-block h5 {
+        font-size: 12px;
+    }
 }
