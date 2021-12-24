@@ -104,12 +104,26 @@ jQuery(document).ready(function($) {
                     }
                 });
             }
-            $('#myInput').keypress(function(event) {
-                if (event.keyCode == 13) {
-                    $('#submit_tracking').click();
-                    return false;
+            $('.accordion-header').click(function() {
+                if ($(this).hasClass("active")) {
+                    $('.accordion-header').removeClass('active');
+                    $('.accordion-body').removeClass('active');
+                    $('.fa_icon').removeClass('fa-minus').addClass("fa-plus");
+                } else {
+                    $('.accordion-header').removeClass('active');
+                    $('.accordion-body').removeClass('active');
+                    $(this).addClass('active');
+                    $(this).next('.accordion-body').addClass('active');
+                    $('.fa_icon').removeClass('fa-minus').addClass("fa-plus");
+                    $(this).find(".fa_icon").addClass("fa-minus").removeClass('fa-plus');
                 }
             });
         });
+    });
+    $('#myInput').keypress(function(event) {
+        if (event.keyCode == 13) {
+            $('#submit_tracking').click();
+            return false;
+        }
     });
 });
