@@ -137,14 +137,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 wow fadeInUp">
-                    <form onsubmit="return false;">
+                    <form method="get">
                         <div class="track-form">
                             <div class="track-form">
                                 <div class="form-group">
-                                    <input type="text" id="myInput" class="form-control" placeholder="Enter your awb number" required="">
+                                    <input type="text" name="tracking_no" id="myInput" class="form-control" placeholder="Enter your awb number" required="">
                                 </div>
                                 <div class="form-group text-center">
-                                    <button class="btn btn-theme" type="button" id="submit_tracking">Track</button>
+                                    <button class="btn btn-theme" type="submit" id="submit_tracking">Track</button>
                                 </div>
                             </div>
                         </div>
@@ -230,6 +230,18 @@
     <script src="js/venobox.min.js"></script>
     <script src="js/custom-scripts.js"></script>
     <script src="js/track.js"></script>
+    <script>
+        jQuery(document).ready(function() {
+            var currentURL = window.location.href;
+            var url = new URL(currentURL);
+            var tracking_no = url.searchParams.get("tracking_no");
+            if (tracking_no) {
+                jQuery("#submit_tracking").click();
+            } else {
+                return false;
+            }
+        });
+    </script>
 
 </body>
 
