@@ -18,7 +18,7 @@
                                At SSBC, we don’t just provide solutions for your relocation, we do it with our heart and protect everything just like you would. 
                             </h3>
                             <div class="slider-button">
-                                <a href="about.html" class="btn btn-slider">Read More</a>   
+                                <a href="about.php" class="btn btn-slider">Read More</a>   
                             </div>  
                         </div>
                     </div>
@@ -40,7 +40,7 @@
                             <div class="">
                                 <p>Welcome to SSBC, and get introduced to a team of highly trained professionals-At SSBC we provide solutions to transportation of your cargo via air, road and ocean freight, including custom clearance and pre and post documentation.Our competitive global network carries air and ocean freight of any size or weight, to and from practically any point, worldwide.</p>
                                 <p class="margin-top-24">
-                                    <a href="about.html" class="btn btn-theme">Read More</a>
+                                    <a href="about.php" class="btn btn-theme">Read More</a>
                                 </p>
                             </div>
                         </div>

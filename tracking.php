@@ -33,7 +33,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 wow fadeInUp">
-                    <form method="get" action="tracking.html">
+                    <form method="get" action="tracking.php">
                         <div class="track-form">
                             <div class="track-form">
                                 <div class="form-group">

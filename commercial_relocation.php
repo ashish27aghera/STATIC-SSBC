@@ -16,7 +16,7 @@
                             Commercial Relocation
                         </h3>
                         <p class="page-breadcrumb">
-                            <a href="index.html">Home</a> / Commercial Relocation
+                            <a href="index.php">Home</a> / Commercial Relocation
                         </p>
                     </div>
                 </div>
