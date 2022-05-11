@@ -14,6 +14,9 @@
                                             <li><a href="commercial_relocation.php">Commercial Relocation</a>  </li>
                                             <li><a href="warehousing_relocation.php">Warehousing Relocation</a></li>
                                             <li><a href="data_management.php">Data Management</a></li>
+                                            <li><a href="terms_service.php">Terms of Service</a></li>
+                                            <li><a href="privacy_policy.php">Privacy Policy</a></li>
+                                            <li><a href="refund_policy.php">Refund Policy</a></li>
                                         </ul>
                                     </div>
                                 </div>
