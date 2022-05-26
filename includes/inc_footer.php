@@ -32,7 +32,7 @@
                                     <div class="footer-info">                                        
                                         <p><span><i class="fa fa-location-arrow fa-footer"></i></span> <span>12-D,Choice Arcade,Opposite Ruby Hall Dhole patil Road, Pune 411 001</span></p>
                                         <p><span><i class="fa fa-envelope-o fa-footer"></i></span> <span><a href="mailto:info@shrisbc.com">info@shrisbc.com</a></span></p>
-                                <p><span><i class="fa fa-phone fa-footer"></i></span> <span><a href="tel:+9102040026617">020-40026617</a> , <a href="tel:+919823958999">+91 9823958999</a></span></p>
+                                <p><span><i class="fa fa-phone fa-footer"></i></span> <span><a href="tel:+9102040026617">020-40026617</a> , <a href="tel:+917420004999">+91 7420004999</a></span></p>
                                     </div>
                                     </div>
                                 </div>

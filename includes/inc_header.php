@@ -37,7 +37,7 @@
                                             <div class="text">
                                                 <span class="head-heading">CALL NOW</span>                                                
                                                 <span class="head-content">
-                                                    <a href="tel:+919823958999">+91 9823958999</a>
+                                                    <a href="tel:+917420004999">+91 7420004999</a>
                                                 </span>
                                             </div>
                                         </div>
