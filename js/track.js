@@ -64,7 +64,7 @@ jQuery(document).ready(function($) {
                         '</td><td>' + ((isNaN(new Date(docket.docket_info[5][1])) || (new Date(docket.docket_info[5][1])) == "undefined") ? " " : (formatDate(new Date(docket.docket_info[5][1])))) +
                         '</td><td>' + (docket.docket_info[5][1] ? docket.docket_info[5][1].split(' ')[2] : " ") +
                         '</td><td>' + (docket.docket_info[6][1] ? docket.docket_info[6][1] : "") +
-                        '</td><td>' + (docket.forwarding_url ? '<a href="' + docket.forwarding_url + '" target="_blank"> ' + docket.forwarding_no + ' </a>' : '' + docket.forwarding_no + '') +
+                        '</td><td>' + (docket.forwarding_url ? '<a href="' + docket.forwarding_url + '" target="_blank" style="color: black;font-weight: 600;"><u> ' + docket.forwarding_no + '</u></a>' : '' + docket.forwarding_no + '') +
                         '</td><td>' + (docket.pod_image ? '<a href="' + docket.pod_image + '" target="_blank"> View </a>' : "") +
                         '</tbody>' + '</table>' + '</div>';
                 }
