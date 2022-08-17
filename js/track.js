@@ -1,10 +1,9 @@
 function formatDate(date) {
-    //var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+    // var monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
     var day = date.getDate();
     var monthIndex = date.getMonth();
     var year = date.getFullYear();
     return day + '/' + (monthIndex + 1) + '/' + year;
-    //return day + ' ' + monthNames[monthIndex] + ' ' + year;
 }
 
 jQuery(document).ready(function($) {
@@ -12,23 +11,31 @@ jQuery(document).ready(function($) {
     var currentURL = window.location.href;
     var url = new URL(currentURL);
     var tracking_no = url.searchParams.get("tracking_no");
-    var search_by = url.searchParams.get("tracking_no");
+    var search_by = url.searchParams.get("searchSelected");
+    if (search_by == 1) {
+        var searchtype = "tracking_no";
+    } else if (search_by == 6) {
+        var searchtype = "forwarding_no1";
+    } else if (search_by == 2) {
+        var searchtype = "reference_no";
+    }
     if (tracking_no) {
         $('.track-result').show('slow', () => {
             $('.track-result').get(0).scrollIntoView();
         });
     }
-    jQuery.getJSON('https://admin.ssbc.co/api/v1/track.json?tracking_no=' + tracking_no + '&search_by=' + search_by + '&show_stages=yes', function(data) {
-        jQuery('.tracking-data').html('');
+    jQuery.getJSON('https://admin.ssbc.co/api/tracking_api/get_tracking_data?' + searchtype + '=' + tracking_no + '&customer_code=superadmin&company=SSBC&api_company_id=6', function(data) {
+       jQuery('.tracking-data').html('');
         if (data && data.length) {
-            jQuery.each(data, function(_index, docket) {
-                var lbl_no = (search_by == 1 ? 'AWB: ' + docket.tracking_no : search_by == 2 ? 'Forwarding: ' + docket.forwarding_no : 'Reference: ' + docket.reference_number);
-                if (_index == 0) {
-                    var is_active = 1;
-                } else {
-                    var is_active = 0;
-                }
+           jQuery.each(data, function(_index, docket) {
+                var lbl_no = (search_by == 1 ? 'AWB: ' + docket.tracking_no : search_by == 2 ? 'Reference: ' + docket.reference_no : search_by == 3 ? 'Order: ' + docket.order_no : search_by == 4 ? 'Eway Bill: ' + docket.eway_bill_no : search_by == 5 ? 'Invoice: ' + docket.invoice_no : search_by == 6 ? 'Forwarding : ' + docket.forwarding_no : 'Forwarding 2: ' + docket.forwarding_no2);
+                if (docket.docket_info) {
                 if (docket.docket_info.length) {
+                    if (_index == 0) {
+                        var is_active = 1;
+                    } else {
+                        var is_active = 0;
+                    }
                     var tr_toappend = '<div class="accordion-header  ' + (is_active == 1 ? "active" : "") + '">' +
                         '<h2>' + lbl_no + '</h2>' +
                         '<h2>Status: ' + docket.docket_info[4][1] + '</h2>' +
@@ -55,19 +62,24 @@ jQuery(document).ready(function($) {
                         '</tr>' +
                         '</thead>' +
                         '<tbody>' +
-                        '<tr><td>' + (docket.tracking_no) + '</td><td>' +
-                        (formatDate(new Date(docket.docket_info[1][1]))) +
+                        '<tr><td>' + (docket.docket_info[0][1]) +
+                        '</td><td>' + (formatDate(new Date(docket.docket_info[1][1]))) +
                         '</td><td>' + (docket.docket_info[2][1]) +
                         '</td><td>' + (docket.docket_info[3][1]) +
-                        '</td><td>' + docket.pcs +
+                        '</td><td>' + (docket.pcs ? docket.pcs : "") +
                         '</td><td>' + (docket.docket_info[4][1]) +
-                        '</td><td>' + ((isNaN(new Date(docket.docket_info[5][1])) || (new Date(docket.docket_info[5][1])) == "undefined") ? " " : (formatDate(new Date(docket.docket_info[5][1])))) +
-                        '</td><td>' + (docket.docket_info[5][1] ? docket.docket_info[5][1].split(' ')[2] : " ") +
-                        '</td><td>' + (docket.docket_info[6][1] ? docket.docket_info[6][1] : "") +
+                        '</td><td>' + ((isNaN(new Date(docket.docket_info[5][1].split(' ')[0])) || (new Date(docket.docket_info[5][1].split(' ')[0])) == "undefined") ? " " : (formatDate(new Date(docket.docket_info[5][1].split(' ')[0])))) +
+                        '</td><td>' + (docket.docket_info[5][1] ? docket.docket_info[5][1].split(' ')[1] : "") +
+                        '</td><td>' + (docket.docket_info[6][1]) +
                         '</td><td>' + (docket.forwarding_url ? '<a href="' + docket.forwarding_url + '" target="_blank" style="color: black;font-weight: 600;"><u> ' + docket.forwarding_no + '</u></a>' : '' + docket.forwarding_no + '') +
                         '</td><td>' + (docket.pod_image ? '<a href="' + docket.pod_image + '" target="_blank"> View </a>' : "") +
-                        '</tbody>' + '</table>' + '</div>';
+                        '</td></tr>' +
+                        '</tbody>' +
+                        '</table>' +
+                        '</div>';
                 }
+                }
+                if (docket.docket_events) {
                 if (docket.docket_events.length) {
                     tr_toappend +=
                         '<h5>Delivery Information</h5>' +
@@ -86,8 +98,8 @@ jQuery(document).ready(function($) {
                     jQuery.each(docket.docket_events, function(index, value) {
                         tr_toappend +=
                             '<tr>' +
-                            '<td>' + formatDate(new Date(value.event_at)) + '</td>' +
-                            '<td>' + (value.event_at ? value.event_at.split('T')[1].slice(0, 5) : " ") + '</td>' +
+                            '<td>' + (value.event_at ? formatDate(new Date(value.event_at.split(' ')[0])) : " ") + '</td>' +
+                            '<td>' + (value.event_at ? value.event_at.split(' ')[1].slice(0, 5) : " ") + '</td>' +
                             '<td>' + (value.event_location) + '</td>' +
                             '<td>' + (value.event_description) + '</td>' +
                             '<td>' + (value.event_remark ? value.event_remark : "") + '</td>' +
@@ -99,7 +111,8 @@ jQuery(document).ready(function($) {
                         jQuery('.tracking-data').append(tr_toappend);
                     }
                 } else {
-                    jQuery('.tracking-data').append('<div class="invalid-record"><h5>Invalid AWB: ' + docket.tracking_no + '</h5></div>');
+                    jQuery('.tracking-data').append('<div class="invalid-record"><h5>Invalid No.: ' + docket.tracking_no + '</h5></div>');
+                }
                 }
             });
         }
@@ -107,14 +120,14 @@ jQuery(document).ready(function($) {
             if ($(this).hasClass("active")) {
                 $('.accordion-header').removeClass('active');
                 $('.accordion-body').removeClass('active');
-                $('.fa_icon').removeClass('fa-minus').addClass("fa-plus");
+                $('.fa_icon').removeClass('fa-chevron-up').addClass("fa-chevron-down");
             } else {
                 $('.accordion-header').removeClass('active');
                 $('.accordion-body').removeClass('active');
                 $(this).addClass('active');
                 $(this).next('.accordion-body').addClass('active');
-                $('.fa_icon').removeClass('fa-minus').addClass("fa-plus");
-                $(this).find(".fa_icon").addClass("fa-minus").removeClass('fa-plus');
+                $('.fa_icon').removeClass('fa-chevron-up').addClass("fa-chevron-down");
+                $(this).find(".fa_icon").addClass("fa-chevron-up").removeClass('fa-chevron-down');
             }
         });
     });

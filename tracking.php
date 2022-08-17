@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <?php include 'includes/inc_head.php';?>
+    <?php include 'includes/inc_head.php'; ?>
 </head>
 
 <body>
-    <?php include 'includes/inc_header.php';?>
+    <?php include 'includes/inc_header.php'; ?>
 
     <section class="page-header">
         <div class="container">
@@ -32,15 +32,22 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-4 col-sm-offset-4 wow fadeInUp">
-                    <form method="get" action="tracking.php">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 wow fadeInUp">
+                    <form method="get">
                         <div class="track-form">
-                            <div class="track-form">
-                                <div class="form-group">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 form-group">
+                                    <select name="searchSelected" id="searchSelected" class="form-control">
+                                        <option value="1" selected="selected">AWB No.</option>
+                                        <option value="6">Forwarding No.</option>
+                                        <option value="2">Reference No.</option>
+                                    </select>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 form-group">
                                     <input type="text" name="tracking_no" id="myInput" class="form-control" placeholder="Enter your awb number">
                                 </div>
-                                <div class="form-group text-center">
-                                    <button class="btn btn-theme" type="submit" id="submit_tracking">Track</button>
+                                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4 form-group text-center">
+                                    <button type="submit" id="submit_tracking" class="btn btn-theme" style="width:100%;">Track</button>
                                 </div>
                             </div>
                         </div>
@@ -52,10 +59,8 @@
             </div>
         </div>
     </section>
-
-    
-        <?php include 'includes/inc_footer.php';?>
-    <?php include 'includes/inc_footer_scripts.php';?>
+    <?php include 'includes/inc_footer.php'; ?>
+    <?php include 'includes/inc_footer_scripts.php'; ?>
 </body>
 
 </html>

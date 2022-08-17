@@ -349,6 +349,19 @@ button {
     background: #ca3124;
 }
 
+.track-area .track-form select {
+    border: 1px solid #ebebeb;
+    padding: 12px 10px !important;
+    line-height: 42px;
+    height: 42px;
+    margin-bottom: 24px;
+    padding-left: 2px;
+    border-radius: 0;
+    background-clip: padding-box;
+    box-shadow: inset 0 0 0 0 rgb(0 0 0 / 20%) !important;
+    transition: 0.3s 0.2s ease-out;
+}
+
 .track-area .track-form input {
     border: 1px solid #ebebeb;
     padding: 12px 10px !important;
@@ -360,6 +373,10 @@ button {
     background-clip: padding-box;
     box-shadow: inset 0 0 0 0 rgb(0 0 0 / 20%) !important;
     transition: 0.3s 0.2s ease-out;
+}
+
+.track-area .track-form .btn-theme {
+    line-height: normal;
 }
 
 .privacy-policy .privacy-content {
