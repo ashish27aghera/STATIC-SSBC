@@ -11,6 +11,7 @@ jQuery(document).ready(function($) {
     var currentURL = window.location.href;
     var url = new URL(currentURL);
     var tracking_no = url.searchParams.get("tracking_no");
+    tracking_no = tracking_no.trim().split(' ');
     var search_by = url.searchParams.get("searchSelected");
     if (search_by == 1) {
         var searchtype = "tracking_no";
@@ -20,9 +21,16 @@ jQuery(document).ready(function($) {
         var searchtype = "reference_no";
     }
     if (tracking_no) {
-        $('.track-result').show('slow', () => {
-            $('.track-result').get(0).scrollIntoView();
-        });
+        if (tracking_no.length <= 50) {
+            $('.track-result').show('slow', () => {
+                $('.track-result').get(0).scrollIntoView();
+            });
+        } else {
+            console.log(tracking_no.length);
+            alert("Up To 50 Tracking Numbers Are Allowed At A Time");
+            $('.tracking-data').html('');
+            return false;
+        }
     }
     jQuery.getJSON('https://admin.ssbc.co/api/tracking_api/get_tracking_data?' + searchtype + '=' + tracking_no + '&customer_code=superadmin&company=SSBC&api_company_id=6', function(data) {
        jQuery('.tracking-data').html('');
