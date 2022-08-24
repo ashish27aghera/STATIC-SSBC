@@ -26,7 +26,6 @@ jQuery(document).ready(function($) {
                 $('.track-result').get(0).scrollIntoView();
             });
         } else {
-            console.log(tracking_no.length);
             alert("Up To 50 Tracking Numbers Are Allowed At A Time");
             $('.tracking-data').html('');
             return false;
