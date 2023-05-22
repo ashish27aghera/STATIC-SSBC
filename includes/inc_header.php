@@ -22,7 +22,7 @@
                                                 <i class="fa fa-envelope"></i>
                                             </div>
                                             <div class="text">
-                                                <span class="head-heading">HELLO TO US</span>                                                
+                                                <span class="head-heading">Hello To US</span>                                                
                                                 <span class="head-content">
                                                      <a href="mailto:info@shrisbc.com">info@shrisbc.com</a> 
                                                 </span>
@@ -35,7 +35,7 @@
                                                 <i class="fa fa-phone-square"></i>
                                             </div>
                                             <div class="text">
-                                                <span class="head-heading">CALL NOW</span>                                                
+                                                <span class="head-heading">Call Now</span>                                                
                                                 <span class="head-content">
                                                     <a href="tel:+917420004999">+91 7420004999</a>
                                                 </span>
@@ -48,7 +48,7 @@
                                                 <i class="fa fa-calendar"></i>
                                             </div>
                                             <div class="text">
-                                                <span class="head-heading">OPENING HOUR</span>                                                
+                                                <span class="head-heading">Opening Hour</span>                                                
                                                 <span class="head-content">
                                                      10:30 AM - 07:30 PM
                                                 </span>

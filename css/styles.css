@@ -1271,7 +1271,7 @@ a.btn-about:hover {
 .header-top .header-icon-box .text .head-heading {
   font-size: 16px;
   line-height: 24px;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 700;
   display: block;
   color: #444444;
@@ -3115,10 +3115,11 @@ header.one-page .navbar-nav > li > a span {
 /*  HOME PAGE 02 */
 /***********************************************************************************************/
 .section-banner {
-  padding: 250px 0px 250px;
+  padding: 100px 0px 100px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed !important;
   position: relative;
   overflow: hidden;
 }
@@ -3128,9 +3129,9 @@ header.one-page .navbar-nav > li > a span {
 .banner-content h2 {
   text-shadow: 1px 1px 1px #111;
   font-family: 'Open Sans', sans-serif;
-  font-size: 70px;
-  line-height: 70px;
-  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
   margin: 0 0 0 0;
   color: #FFFFFF;
 }

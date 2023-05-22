@@ -220,6 +220,7 @@ footer a:hover {
 
 .page-header {
     background-image: url(../images/breadcrumb.jpg);
+    background-attachment: fixed;
 }
 
 .page-header:before {
