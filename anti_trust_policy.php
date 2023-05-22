@@ -76,8 +76,6 @@
                             <p>6. Limit any information discussed during commercial negotiations, with or
                                 disclosed to competitors or other third parties, to that which is strictly necessary
                                 for completing or assessing the transaction.</p>
-                            <p>SSBC always abides by the FIDI Anti-Trust Charter. You can find this charter by accessing
-                                this LINK</p>
                         </div>
                     </div>
                 </div>

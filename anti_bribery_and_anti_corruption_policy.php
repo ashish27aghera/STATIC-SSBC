@@ -123,8 +123,7 @@
                                 When making first contact with a new possible third party, we have a link copy of this anti-
                                 bribery and corruption policy that will be attached to highlight our expectations of them. If
                                 you have any concerns that arrangements with a third party are not in accordance with this
-                                policy, you should ask your local anti-bribery and corruption officer for help</p>
-                            <p>Vi This LINK please find our Anti-trust Charter.</p>
+                                policy, you should ask your local anti-bribery and corruption officer for help.</p>
                             <p>Anil Bijlani</p>
                             <p>CEO SSBC</p>
                             <p style="text-align: center !important;">Privacy Policy Updated May 2023</p>

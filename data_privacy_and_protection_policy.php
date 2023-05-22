@@ -36,7 +36,7 @@
                                 comply with all applicable laws and regulations regarding any personal information we may
                                 collect from you while providing our services. This data privacy and protection policy (“policy”)
                                 also extends to our websites, email communications, and other digital channels that we operate.</p>
-                            <p>This policy is effective as of Effective May 2023 and was last updated on May 2023.</p>
+                            <p>This policy is effective as of May 2023 and was last updated on May 2023.</p>
                         </div>
                         <div class="privacy-content">
                             <div class="wow fadeInDown" data-wow-delay="2000">
