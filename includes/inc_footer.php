@@ -28,9 +28,9 @@
                                 <ul class="footer-menu">
                                     <li><a href="terms_service.php">Terms of Service</a></li>
                                     <li><a href="refund_policy.php">Refund Policy</a></li>
-                                    <li><a href="anti_trust_policy.php">Anti Trust Policy</a></li>
+                                    <!-- <li><a href="anti_trust_policy.php">Anti Trust Policy</a></li> -->
                                     <li><a href="data_privacy_and_protection_policy.php">Data Privacy & Protection Policy</a></li>
-                                    <li><a href="anti_bribery_and_anti_corruption_policy.php">Anti Bribery & Anti Corruption Policy</a></li>
+                                    <!-- <li><a href="anti_bribery_and_anti_corruption_policy.php">Anti Bribery & Anti Corruption Policy</a></li> -->
                                 </ul>
                             </div>
                         </div>
