@@ -30,6 +30,8 @@ jQuery(document).ready(function($) {
             $('.tracking-data').html('');
             return false;
         }
+    } else {
+        return false;
     }
     jQuery.getJSON('https://admin.ssbc.co/api/tracking_api/get_tracking_data?' + searchtype + '=' + tracking_no + '&customer_code=superadmin&company=SSBC&api_company_id=6', function(data) {
        jQuery('.tracking-data').html('');
