@@ -32,42 +32,36 @@
                             <div class="wow fadeInDown" data-wow-delay="2000">
                                 <h6>Anti Bribery & Anti Corruption Policy</h6>
                             </div>
-                            <p>We are committed to carry out all work lawfully, ethically and with integrity. All forms of
-                                bribery and corruption are unacceptable and will not be tolerated. This also applies to any
-                                third party acting on our behalf, as a representative of our company.</p>
-                            <p>This anti-bribery and corruption policy sets out SSBC's policies to prevent acts of bribery and
-                                corruption. If you have any issues or questions on this policy, please seek advice from a
-                                member of staff. This policy applies to all employees, management, directors of SSBC and of
-                                any company that completes services on our behalf. This is a single standard across the board
-                                and all employees are expected to read, understand and agree to these terms and conditions as
-                                part of their working contract. We also conduct training with relevant employees to ensure
-                                these practices are updated if required.</p>
-                            <p>It is also important to ensure our service providers, agents, partners all abide by the same
-                                anti-bribery and anti-corruption policies. To ensure we continually monitor the ethics of our
-                                providers, it is first important to clearly understand both bribery and corruption.</p>
+                            <p>We are committed to carry out all work lawfully, ethically and with integrity. All forms of bribery and 
+                                corruption are unacceptable and will not be tolerated. This also applies to any third party acting on our behalf, as a 
+                                representative of our company.</p>
+                            <p>This anti-bribery and corruption policy sets out SSBC’s policies to prevent acts of bribery and corruption. If you have any 
+                                issues or questions on this policy, please seek advice from a member of staff. This policy applies to all employees, management, 
+                                directors of SSBC and of any company that completes services on our behalf. This is a single standard across the board and all 
+                                employees are expected to read, understand and agree to these terms and conditions as part of their working contract. We also 
+                                conduct training with relevant employees to ensure these practices are updated if required.</p>
+                            <p>It is also important to ensure our service providers, agents, partners all abide by the same anti-bribery and anti-corruption policies. 
+                                To ensure we continually monitor the ethics of our providers, it is first important to clearly understand both bribery and corruption.</p>
                         </div>
                         <div class="privacy-content">
                             <div class="wow fadeInDown" data-wow-delay="2000">
                                 <h6>Definition of Bribery:</h6>
                             </div>
-                            <p>Bribery is the offering, promising, giving, accepting or soliciting of an advantage as an
-                                inducement for an action which is illegal, unethical or a breach of trust. Many types of
-                                payments or favours can constitute bribes: tips, gifts, favours, discount, waived fees, free
-                                foods, free advertising, free trips, free tickets, donations, campaign contribution,
-                                sponsorship/backing, promotions. The key to identifying bribery is that it is intended to alter
-                                the recipient's behaviour.</p>
+                            <p>Bribery is the offering, promising, giving, accepting or soliciting of an advantage as an inducement for an action which is illegal, 
+                                unethical or a breach of trust. Many types of payments or favours can constitute bribes: tips, gifts, favours, discount, 
+                                waived fees, free foods, free advertising, free trips, free tickets, donations, campaign contribution, sponsorship/backing, promotions. 
+                                The key to identifying bribery is that it is intended to alter the recipient’s behaviour.</p>
                         </div>
                         <div class="privacy-content">
                             <div class="wow fadeInDown" data-wow-delay="2000">
                                 <h6>Definition of Corruption:</h6>
                             </div>
-                            <p>Corruption is receiving, asking for or giving any gratification to induce a person to do a
-                                favour with a corrupt intent. As such, it's considered to be an abuse of power. Corruption
-                                occurs when someone in a position of power uses their authority to influence decisions or
-                                conducts any other dishonest or fraudulent behaviour like giving or accepting bribes.
-                                All forms of bribery and corruption are strictly prohibited. Any breach of this policy will be
-                                met with disciplinary action and possible dismissal. It is also important to ensure that any
-                                person acting on behalf of SSBC also abide by this policy.</p>
+                            <p>Corruption is receiving, asking for or giving any gratification to induce a person to do a favour with a corrupt intent. 
+                                As such, it’s considered to be an abuse of power. Corruption occurs when someone in a position of power uses their authority to influence 
+                                decisions or conducts any other dishonest or fraudulent behaviour like giving or accepting bribes.
+                                All forms of bribery and corruption are strictly prohibited. Any breach of this policy will be met with disciplinary 
+                                action and possible dismissal. It is also important to ensure that any person acting on behalf of SSBC also abide by this policy.
+</p>
                         </div>
                         <div class="privacy-content">
                             <div class="wow fadeInDown" data-wow-delay="2000">
@@ -124,10 +118,10 @@
                                 bribery and corruption policy that will be attached to highlight our expectations of them. If
                                 you have any concerns that arrangements with a third party are not in accordance with this
                                 policy, you should ask your local anti-bribery and corruption officer for help.</p>
-                            <p>Anil Bijlani</p>
-                            <p>CEO SSBC</p>
-                            <p style="text-align: center !important;">Privacy Policy Updated May 2023</p>
-                            <p style="text-align: center !important;">Anti Bribery and Corruption Policy & Anti Trust Charter Updated May 2023</p>
+                            <p>Via <a href="anti_bribery_and_anti_corruption_policy.php" target="_blank" style="color: #0422bf;">This LINK</a> please find our Anti-trust Charter.</p>
+                            <p>SSBC Global Logistics Pvt Ltd</p>
+                            <!-- <p style="text-align: center !important;">Privacy Policy Updated May 2023</p> -->
+                            <!-- <p style="text-align: center !important;">Anti Bribery and Corruption Policy & Anti Trust Charter Updated May 2023</p> -->
 
                         </div>
                     </div>
