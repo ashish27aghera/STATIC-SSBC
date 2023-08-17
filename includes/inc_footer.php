@@ -2,7 +2,7 @@
     <section class="footer-widget-area footer-widget-area-bg">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
@@ -18,7 +18,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
@@ -27,16 +27,29 @@
                             <div class="textwidget">
                                 <ul class="footer-menu">
                                     <li><a href="terms_service.php">Terms of Service</a></li>
-                                    <li><a href="refund_policy.php">Refund Policy</a></li>
-                                    <!-- <li><a href="anti_trust_policy.php">Anti Trust Policy</a></li> -->
                                     <li><a href="data_privacy_and_protection_policy.php">Data Privacy & Protection Policy</a></li>
-                                    <!-- <li><a href="anti_bribery_and_anti_corruption_policy.php">Anti Bribery & Anti Corruption Policy</a></li> -->
+                                    <li><a href="refund_policy.php">Refund Policy</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="footer-widget">
+                        <div class="sidebar-widget-wrapper">
+                            <div class="footer-widget-header clearfix">
+                                <h3>Corporate Governance</h3>
+                            </div>
+                            <div class="textwidget">
+                                <ul class="footer-menu">
+                                    <li><a href="anti_trust_policy.php">Anti Trust Policy</a></li>
+                                    <li><a href="anti_bribery_and_anti_corruption_policy.php">Anti Bribery & Anti Corruption Policy</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
