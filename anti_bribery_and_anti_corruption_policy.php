@@ -103,26 +103,8 @@
                                 <li>We never disregard or fail to report any indication of improper payments to the appropriate authorities.</li>
                                 <li>We never induce or assist another individual to break any applicable law or legislation.</li>
                             </ol>
-                        </div>
-                        <div class="privacy-content">
-                            <div class="wow fadeInDown" data-wow-delay="2000">
-                                <h6>COMPLIANCE WITH THE POLICY</h6>
-                            </div>
-                            <p>Every individual has an obligation to act with integrity to ensure we understand and comply
-                                with the policy. We will ensure compliance by providing training to the relevant employees
-                                and all employees will be required to confirm that they understand and accept the policy. We
-                                will ensure employees sign a copy of this policy annually. All employees have been emailed
-                                this policy and have access on either our website, or a shared OneDrive.</p>
-                            <p>Access to policy for service providers will be provided in email signature by all employees.
-                                When making first contact with a new possible third party, we have a link copy of this anti-
-                                bribery and corruption policy that will be attached to highlight our expectations of them. If
-                                you have any concerns that arrangements with a third party are not in accordance with this
-                                policy, you should ask your local anti-bribery and corruption officer for help.</p>
-                            <p>Via <a href="anti_bribery_and_anti_corruption_policy.php" target="_blank" style="color: #0422bf;">This LINK</a> please find our Anti-trust Charter.</p>
+                            <p>Via <a href="anti_trust_policy.php" target="_blank" style="color: #0422bf;">This LINK</a> please find our Anti-trust Charter.</p>
                             <p>SSBC Global Logistics Pvt Ltd</p>
-                            <!-- <p style="text-align: center !important;">Privacy Policy Updated May 2023</p> -->
-                            <!-- <p style="text-align: center !important;">Anti Bribery and Corruption Policy & Anti Trust Charter Updated May 2023</p> -->
-
                         </div>
                     </div>
                 </div>
