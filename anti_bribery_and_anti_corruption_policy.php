@@ -112,7 +112,7 @@
                                 with the policy. We will ensure compliance by providing training to the relevant employees
                                 and all employees will be required to confirm that they understand and accept the policy. We
                                 will ensure employees sign a copy of this policy annually. All employees have been emailed
-                                this policy and have access on either our website, or a shared OneDrive.</p>
+                                this policy and have access on our website.</p>
                             <p>Access to policy for service providers will be provided in email signature by all employees.
                                 When making first contact with a new possible third party, we have a link copy of this anti-
                                 bribery and corruption policy that will be attached to highlight our expectations of them. If
