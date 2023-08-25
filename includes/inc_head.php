@@ -1,5 +1,5 @@
 <meta charset="utf-8">
-        <title>SSBC | Shri Sai Baba Couriers</title>
+        <title>SSBC | Global Logistics Pvt. Ltd.</title>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
         <link rel="shortcut icon" href="images/favicon.png" />
         <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
