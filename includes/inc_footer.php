@@ -6,7 +6,7 @@
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
-                                <h3>We Offers</h3>
+                                <h5 style="color: #f39612;">WE OFFER</h5>
                             </div>
                             <div class="textwidget">
                                 <ul class="footer-menu">
@@ -22,7 +22,7 @@
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
-                                <h3>Our Support</h3>
+                                <h5 style="color: #f39612;">OUR SUPPORT</h5>
                             </div>
                             <div class="textwidget">
                                 <ul class="footer-menu">
@@ -38,12 +38,13 @@
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
-                                <h3>Corporate Governance</h3>
+                                <h5 style="color: #f39612;">CORPORATE GOVERNANCE WITH OUR COMMITMENTS</h5>
                             </div>
                             <div class="textwidget">
                                 <ul class="footer-menu">
                                     <li><a href="anti_trust_policy.php">Anti Trust Policy</a></li>
                                     <li><a href="anti_bribery_and_anti_corruption_policy.php">Anti Bribery & Anti Corruption Policy</a></li>
+                                    <li><a href="sustainability_program.php">Sustainability Program</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -53,7 +54,7 @@
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
-                                <h3>Contact Us</h3>
+                                <h5 style="color: #f39612;">CONTACT US</h5>
                             </div>
                             <div class="textwidget">
                                 <div class="footer-info">
