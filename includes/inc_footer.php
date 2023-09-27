@@ -38,7 +38,7 @@
                     <div class="footer-widget">
                         <div class="sidebar-widget-wrapper">
                             <div class="footer-widget-header clearfix">
-                                <h5 style="color: #f39612;">CORPORATE GOVERNANCE WITH OUR COMMITMENTS</h5>
+                                <h5 style="color: #f39612;">OUR COMMITMENTS</h5>
                             </div>
                             <div class="textwidget">
                                 <ul class="footer-menu">
