@@ -74,6 +74,7 @@
                 </div>
             </div>
         </div>
+        <p style="text-align: center;margin-top : 20px;">Copyright &copy; 2025 <a href="index.php">SSBC GLOBAL LOGISTICS PRIVATE LIMITED</a> Powered By <a href="https://itdservices.in/" target="_blank">ITD Services Pvt Ltd</a></p>
     </section>
 </footer>
 <a id="backTop">Back To Top</a>
